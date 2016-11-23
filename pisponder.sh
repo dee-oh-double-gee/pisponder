@@ -9,6 +9,8 @@ if [ $EUID -ne 0 ]; then
 	exit
 fi
 
+apt-get update
+
 ## Setup the PiZero to look like a USB to Ethernet
 cd /boot
 sed -i -r -e 's/(rootwait)/\1 modules-load=dwc2,g_ether/' cmdline.txt
