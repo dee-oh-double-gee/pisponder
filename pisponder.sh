@@ -49,7 +49,7 @@ EOF
 ##Install Responder and dependencies
 apt-get install -y python git python-pip python-dev screen sqlite3 inotify-tools
 pip install pycrypto
-git clone https://github.com/spiderlabs/responder
+git clone https://github.com/spiderlabs/responder /root/responder
 
 
 ##Start Responder at bootup
