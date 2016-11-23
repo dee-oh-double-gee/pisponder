@@ -26,7 +26,7 @@ EOF
 
 
 ##Install and configure dnsmasq
- apt-get install dnsmasq
+ apt-get install -y dnsmasq
 
 
 cat <<'EOF'>>/etc/dnsmasq.conf
