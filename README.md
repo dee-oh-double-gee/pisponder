@@ -7,12 +7,14 @@ https://room362.com/post/2016/snagging-creds-from-locked-machines/
 
 pisponder is my first script. All it does is turn a Raspberry Pi Zero running Raspbian lite into a NTLMv2 hash stealing machine (even when the other computer is locked!).
 
+**Instructions**
+
 Download pisponder.sh, chmod 755 it and then run as root.
 
 I have only tested this script on the raspberry pi zero 1.3
 
 
-Credit goes to:
+**Credit goes to:**
 
 https://github.com/lgandx/Responder
 
