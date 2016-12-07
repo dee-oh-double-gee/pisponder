@@ -12,6 +12,14 @@ pisponder is my first script. All it does is turn a Raspberry Pi Zero running Ra
 
 Download pisponder.sh, make it executable and then run as root.
 
+EX:
+```
+wget https://raw.githubusercontent.com/dee-oh-double-gee/pisponder/master/pisponder.sh
+
+sudo chmod 755 pisponder.sh
+
+sudo ./pisponder.sh
+```
 This script will work ONLY on the Raspberry Pi Zero. And I have only tested it on ver 1.3.
 
 **Demo Video:**
