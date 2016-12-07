@@ -15,9 +15,9 @@ This script will work ONLY on the Raspberry Pi Zero. And I have only tested it o
 
 **Demo Video:**
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=Q0FAaYyVxk4
-" target="_blank"><img src="http://img.youtube.com/vi/Q0FAaYyVxk4/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=0Rrhi5nXQ2k
+" target="_blank"><img src="http://img.youtube.com/vi/0Rrhi5nXQ2k/0.jpg" 
+alt="Pisponder Demo" width="240" height="180" border="10" /></a>
 
 **Credit goes to:**
 
