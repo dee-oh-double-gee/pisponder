@@ -3,10 +3,10 @@
 # Please tell me what I can improve upon
 # This script will only work on the Raspberry Pi Zero
 
-if [ $EUID -ne 0 ]; then
-	echo "You must use sudo to run this script:"
-	echo "sudo $0 $@"
-	exit
+## Automatically asks for root privilege if not yet available
+if [ $EUID != 0 ]; then
+	sudo "$0" "$@"
+	exit $?
 fi
 
 apt-get update
