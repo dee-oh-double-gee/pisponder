@@ -47,9 +47,9 @@ port=0
 EOF
 
 ##Install Responder and dependencies
-apt-get install -y python git python-pip python-dev screen sqlite3 inotify-tools
-pip install pycrypto
-git clone https://github.com/spiderlabs/responder /opt/responder
+apt-get install -y python3 git python3-pip python-dev screen sqlite3 inotify-tools
+pip3 install pycrypto
+git clone https://github.com/lgandx/Responder /opt/responder
 
 
 ##Start Responder at bootup
